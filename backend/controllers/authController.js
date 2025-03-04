@@ -220,7 +220,7 @@ exports.uploadProfileImage = async (req, res) => {
     return res.status(400).json({ error: "No file uploaded." });
   }
 
-  const imageUrl = `https://link-tree-rj51.onrender.com/uploads/${req.file.filename}`;
+  const imageUrl = `https://link-tree-1-at5n.onrender.com/uploads/${req.file.filename}`;
   try {
     // Update the user's profile image in the database
     const updatedUser   = await User.findByIdAndUpdate(

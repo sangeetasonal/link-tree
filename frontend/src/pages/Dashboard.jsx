@@ -57,7 +57,7 @@ const Dashboard = () => {
     setLoading(true);
     try {
         const token = localStorage.getItem("token"); // Get token
-        const response = await fetch("https://link-tree-rj51.onrender.com/api/auth/save-nickname", {
+        const response = await fetch("https://link-tree-1-at5n.onrender.com/api/auth/save-nickname", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
