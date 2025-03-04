@@ -550,7 +550,7 @@ const setActiveTab = (tab) => {
   // Function to generate a unique link
   const generateUniqueLink = () => {
     const formattedNickname = userInfo.nickname.replace(/\s+/g, '-').toLowerCase(); // Format the nickname for the URL
-    const uniqueLink = `https://link-tree-rj51.onrender.com/preview/${formattedNickname}`; // Adjust the port if necessary
+    const uniqueLink = `https://link-tree-flax.vercel.app//preview/${formattedNickname}`; // Adjust the port if necessary
     setShareableLink(uniqueLink); // Set the shareable link
   };
 
