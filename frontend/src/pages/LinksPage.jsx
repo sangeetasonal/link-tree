@@ -32,7 +32,7 @@ import copy from "../assets/copy.png";
 import stackIcon from "../assets/stack.png";
 import gridIcon from "../assets/grid.png";
 import carouselIcon from "../assets/carousel.png";
-import vector from "../assets/vector.png";
+import vector from "../assets/Vector.png";
 import special1 from "../assets/1s.png";
 import special2 from "../assets/2s.png";
 import special3 from "../assets/3s.png";
