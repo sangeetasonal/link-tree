@@ -20,7 +20,7 @@ const PreviewPage = () => {
   useEffect(() => {
     const fetchUserInfo = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/auth/user-info`, {
+        const response = await axios.get(`https://link-tree-rj51.onrender.com/api/auth/user-info`, {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
           },
@@ -45,7 +45,7 @@ const PreviewPage = () => {
 
   const fetchLinks = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/auth/user-links", {
+      const response = await axios.get("https://link-tree-rj51.onrender.com/api/auth/user-links", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
