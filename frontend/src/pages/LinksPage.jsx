@@ -546,26 +546,23 @@ const setActiveTab = (tab) => {
     }
   };
 
-
-  // Function to generate a unique link
   const generateUniqueLink = () => {
     const formattedNickname = userInfo.nickname.replace(/\s+/g, '-').toLowerCase(); // Format the nickname for the URL
-    const uniqueLink = `https://link-tree-flax.vercel.app/preview/${formattedNickname}`; // Adjust the port if necessary
-    setShareableLink(uniqueLink); // Set the shareable link
+    return `https://link-tree-flax.vercel.app/preview/${formattedNickname}`; // Generate the unique link
   };
 
- 
   const handleShareClick = () => {
-    generateUniqueLink(); // Generate the unique link
-    navigator.clipboard.writeText(shareableLink) // Copy the link to the clipboard
+    const uniqueLink = generateUniqueLink(); // Generate the unique link
+    navigator.clipboard.writeText(uniqueLink) // Copy the link to the clipboard
       .then(() => {
         alert('Link copied to clipboard!'); // Notify the user
+        window.open(uniqueLink, '_blank'); // Open the link in a new tab
       })
       .catch(err => {
         console.error('Failed to copy: ', err);
       });
   };
-  
+
 
   const handleButtonSelect = (style) => {
     switch (style) {
